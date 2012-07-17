@@ -14,4 +14,29 @@
         <mongodb.database>pairMetrics</mongodb.database>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.googlecode</groupId>
+                <artifactId>maven-mongodb-plugin</artifactId>
+                <version>0.2</version>
+                <configuration>
+                    <dbConnectionSettings>
+                        <hostname>${mongodb.hostname}</hostname>
+                        <port>${mongodb.port}</port>
+                        <database>${mongodb.database}</database>
+                    </dbConnectionSettings>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>2.7.0</version>
+        </dependency>
+    </dependencies>
+
 </project>
