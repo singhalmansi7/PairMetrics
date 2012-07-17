@@ -1,4 +1,4 @@
-package controllers.model;
+package model;
 import lombok.Setter;
 
 import java.util.ArrayList;
