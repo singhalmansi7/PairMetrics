@@ -1,12 +1,19 @@
 package model;
+import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Project {
-    @Setter
+    @Setter@Getter
     String name;
+
+    @Getter
     String office;
-    ArrayList<String> teamName = new ArrayList<String>();
+
+    @Getter
+    Map<Integer,String> teamName = new HashMap<Integer, String> ();
 
 }
