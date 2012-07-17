@@ -7,5 +7,11 @@
     <groupId>PairMetrics</groupId>
     <artifactId>PairMetrics</artifactId>
     <version>1.0</version>
-      eqweqwrada
+
+    <properties>
+        <mongodb.hostname>localhost</mongodb.hostname>
+        <mongodb.port>27017</mongodb.port>
+        <mongodb.database>pairMetrics</mongodb.database>
+    </properties>
+
 </project>
